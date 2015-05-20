@@ -1,7 +1,7 @@
 package datastructure.string;
 
 import java.util.Arrays;
-
+  
 // 旋转字符串：把字符串前面的m个字符移动到字符串的尾部
 public class RotateString {
 
