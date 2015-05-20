@@ -1,4 +1,4 @@
-package taop.datastructure.mystring;
+package datastructure.string;
 
 import java.util.Arrays;
 
