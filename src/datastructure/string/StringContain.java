@@ -52,7 +52,6 @@ public class StringContain {
 	// 方法四：签名法
 	// 对字符串s1，用位运算（26bit整数表示)计算出一个“签名”，再用B中的字符到A里面进行查找。
 	boolean stringContainSign(String s1, String s2) {
-        int[] arr = new int[] {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101};
         int code = 0;
         for(int i = 0; i < s1.length(); i++) {
             code = code | (1 << (s1.charAt(i) - 'A'));
@@ -66,7 +65,6 @@ public class StringContain {
 	}
 	
 	void test(String s) {
-	    int[] arr = new int[] {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101};
         int code = 0;
         for(int i = 0; i < s.length(); i++) {
             code = code | (1 << (s.charAt(i) - 'A'));
